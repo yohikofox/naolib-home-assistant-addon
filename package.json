@@ -1,0 +1,13 @@
+{
+  "name": "naolib-home-assistant-addon",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "repository": "https://github.com/yohikofox/naolib-home-assistant-addon.git",
+  "author": "yohikofox <yohikofox360@live.fr>",
+  "license": "MIT",
+  "scripts": {
+    "build": "echo \"yo\"",
+    "docker:build": "docker build --build-arg BUILD_FROM=alpine -t ha/naolib:latest .",
+    "docker:run": "docker run --name naolib ha/naolib:latest"
+  }
+}
